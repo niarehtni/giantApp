@@ -1,6 +1,7 @@
 import React, { Component,PropTypes } from 'react';
 import Swiper from 'react-native-swiper';
 import ScreenUtils from '../../../utils/ScreenUtils.js';
+import { Button } from 'react-native-elements'
 
 import {
   Platform,
@@ -13,8 +14,12 @@ import {
 } from 'react-native';
 
 
-export default class Index extends Component<{}> {
+
+export default class home extends Component<{}> {
+ 
+    
   render() {
+  const { navigate } = this.props.navigation;
     return (
       <View>
         <Swiper
@@ -28,8 +33,21 @@ export default class Index extends Component<{}> {
         </Swiper>
 
         <ScrollView style={styles.container}>
-              <Text style={styles.a}>123</Text>
-        </ScrollView>
+          <Button
+             icon={{name: 'cached'}}
+              title="Go to Jane's profile"
+              onPress={() =>
+                navigate('index', {
+                  name: 'list'
+                })
+              }
+            />
+             {/* <Button
+             icon={{name: 'cached'}}
+             title = 'BUTTON'
+             onPress={()=>{ navigation.navigate('index') }
+             ></Button> */}
+      </ScrollView>
       </View>
 
     );

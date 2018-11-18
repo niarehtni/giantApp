@@ -1,6 +1,6 @@
 import React, { Component,PropTypes } from 'react';
 import Swiper from 'react-native-swiper';
-import Detail from './detail'
+// import Detail from '../detail/detail'
 
 import {
   Platform,

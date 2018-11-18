@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Dimensions from 'Dimensions'   //获取屏幕的尺寸
-import listDetail from './listDetail'
-import * as jsCallNative from '../../utils/jsCallNative'
+import listDetail from '../listDetail/listDetail'
+import * as jsCallNative from '../../../utils/jsCallNative'
 
 import {
   StyleSheet,

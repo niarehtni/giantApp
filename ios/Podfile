@@ -3,5 +3,7 @@ platform :ios, ‘8.0’
 
 target 'ReactNativeLearn' do
     pod 'SVProgressHUD'
+  pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
+
 end
 

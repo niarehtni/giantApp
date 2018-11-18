@@ -4,9 +4,9 @@
 // } from 'react';
 import {StackNavigator} from "react-navigation";
 
-import detail from './pages/listDetail'
-import list from './pages/list'
-import index from './pages/Index'
+import detail from './pages/listDetail/listDetail'
+import list from './pages/list/list'
+import index from './pages/Index/Index'
 import home from './pages/home/home'
 
 export default RouteConfigs = {
