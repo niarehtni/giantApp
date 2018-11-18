@@ -38,7 +38,7 @@ export default class home extends Component<{}> {
               title="Go to Jane's profile"
               onPress={() =>
                 navigate('index', {
-                  name: 'index'
+                  name: 'list'
                 })
               }
             />
