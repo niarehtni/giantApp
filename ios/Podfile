@@ -5,5 +5,7 @@ target 'ReactNativeLearn' do
     pod 'SVProgressHUD'
   pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
 
+  pod 'react-native-contacts', :path => '../node_modules/react-native-contacts'
+
 end
 

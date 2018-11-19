@@ -15,8 +15,8 @@ export default RouteConfigs = {
         navigationOptions: ({
             navigation
         }) => ({
-            title: '首页',
-        }),
+            // title: '',
+        })
     },
     Home: {
         screen: list,

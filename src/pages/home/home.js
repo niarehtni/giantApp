@@ -2,6 +2,7 @@ import React, { Component,PropTypes } from 'react';
 import Swiper from 'react-native-swiper';
 import ScreenUtils from '../../../utils/ScreenUtils.js';
 import { Button } from 'react-native-elements'
+import Contacts from 'react-native-contacts'
 
 import {
   Platform,
@@ -14,14 +15,32 @@ import {
 } from 'react-native';
 
 
+  
+
 
 export default class home extends Component<{}> {
- 
+
+  a() {
+    console.log('====================================');
+    console.log(123);
+    console.log('====================================');
+    Contacts.getAll((err, contacts) => {
+      if (err === 'denied') {
+        // error
+      } else {
+        console.log('====================================');
+        console.log(contacts);
+        console.log('====================================');
+        // contacts returned in []
+      }
+    })
+  }
     
   render() {
   const { navigate } = this.props.navigation;
     return (
       <View>
+        <Text>123</Text>
         <Swiper
             style={styles.swiper}
             height={200}
@@ -42,11 +61,11 @@ export default class home extends Component<{}> {
                 })
               }
             />
-             {/* <Button
+             <Button
              icon={{name: 'cached'}}
              title = 'BUTTON'
-             onPress={()=>{ navigation.navigate('index') }
-             ></Button> */}
+             onPress={()=>{this.a}}
+             />
       </ScrollView>
       </View>
 

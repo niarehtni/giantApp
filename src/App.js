@@ -32,7 +32,11 @@ const StackNavigatorConfig = {
   initialRouteName: 'home',
   initialRouteParams: {initPara: '初始页面参数'},
     cardStyle: {backgroundColor: "#ffffff"},
+  headerMode: 'none', // 禁用头部
+  navigationOptions: {gesturesEnabled: false} //禁用页面的手势
 }
+
+
 
 const Navigator = StackNavigator(RouteConfigs, StackNavigatorConfig);
 export default class App extends Component<{}> {
