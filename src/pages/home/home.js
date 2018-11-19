@@ -52,7 +52,7 @@ export default class home extends Component<{}> {
         </Swiper>
 
         <ScrollView style={styles.container}>
-          <Button
+          {/* <Button
              icon={{name: 'cached'}}
               title="Go to Jane's profile"
               onPress={() =>
@@ -60,7 +60,7 @@ export default class home extends Component<{}> {
                   name: 'list'
                 })
               }
-            />
+            /> */}
              <Button
              icon={{name: 'cached'}}
              title = 'BUTTON'
