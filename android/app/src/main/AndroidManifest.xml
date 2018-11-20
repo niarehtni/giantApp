@@ -8,6 +8,12 @@
     <uses-permission android:name="android.permission.READ_PROFILE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <!-- 发送短信 -->
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <!-- 读取短信 -->
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <!-- 接收短信 -->
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
 
     <uses-sdk
         android:minSdkVersion="16"
