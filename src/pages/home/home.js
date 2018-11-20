@@ -1,8 +1,9 @@
 import React, { Component,PropTypes } from 'react';
 import Swiper from 'react-native-swiper';
-import ScreenUtils from '../../../utils/ScreenUtils.js';
 import { Button } from 'react-native-elements'
-import Contacts from 'react-native-contacts'
+import Contacts from 'react-native-contacts';
+import Css from './css';
+const styles = StyleSheet.create(Css);
 
 import {
   Platform,
@@ -15,24 +16,13 @@ import {
 } from 'react-native';
 
 
-  
-
-
 export default class home extends Component<{}> {
 
   a() {
-    console.log('====================================');
-    console.log(123);
-    console.log('====================================');
     Contacts.getAll((err, contacts) => {
-      if (err === 'denied') {
-        // error
-      } else {
-        console.log('====================================');
-        console.log(contacts);
-        console.log('====================================');
-        // contacts returned in []
-      }
+      if (err) throw err;
+      // contacts returned
+      console.log(contacts)
     })
   }
     
@@ -64,7 +54,7 @@ export default class home extends Component<{}> {
              <Button
              icon={{name: 'cached'}}
              title = 'BUTTON'
-             onPress={()=>{this.a}}
+             onPress={this.a}
              />
       </ScrollView>
       </View>
@@ -73,18 +63,3 @@ export default class home extends Component<{}> {
   }
 }
 
-const styles = StyleSheet.create({
-  swiper: {},
-  img: {
-      width: ScreenUtils.screenW,
-      height: 250,
-  },
-	container:{
-      height: ScreenUtils.screenH - 250,
-    	// backgroundColor:'#F2F2F2',
-    	// flex:1
-  },
-  a:{
-    color: 'red'
-  }
-});

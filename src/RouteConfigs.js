@@ -1,7 +1,3 @@
-// import React, {
-//     Component,
-//     PropTypes
-// } from 'react';
 import {StackNavigator} from "react-navigation";
 
 import detail from './pages/listDetail/listDetail'
