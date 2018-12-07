@@ -35,7 +35,7 @@ goToNextPage() {
 }
 
 render() {
-  // const { navigate } = StackNavigator.navigation;
+  const { navigate } = this.props.navigator.navigation;
     return (
       <View style={styles.page}>
       <View  style={styles.swiper}>
