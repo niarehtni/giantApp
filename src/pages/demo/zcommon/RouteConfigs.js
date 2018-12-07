@@ -3,7 +3,7 @@ import {StackNavigator} from "react-navigation";
 import detail from './pages/listDetail/listDetail'
 import list from './pages/list/list'
 import index from './pages/Index/Index'
-import home from './pages/home/home'
+import home from './pages/daichao/home/home'
 
 export default RouteConfigs = {
     home: {

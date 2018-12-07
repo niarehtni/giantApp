@@ -5,7 +5,7 @@
  */
 
 import React, { Component,PropTypes } from 'react';
-import RouteConfigs from './RouteConfigs.js'
+import RouteConfigs from './pages/daichao/zcommon/RouteConfigs.js'
 
 import {
   Platform,
@@ -29,7 +29,7 @@ const instructions = Platform.select({
 // 设置入口文件
 
 const StackNavigatorConfig = {
-  initialRouteName: 'home',
+  initialRouteName: 'Home',
   initialRouteParams: {initPara: '初始页面参数'},
     cardStyle: {backgroundColor: "#ffffff"},
   headerMode: 'none', // 禁用头部
